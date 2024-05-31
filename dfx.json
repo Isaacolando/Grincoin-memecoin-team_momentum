@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Grincoin_backend": {
+      "candid": "src/Grincoin_backend/Grincoin_backend.did",
+      "package": "Grincoin_backend",
+      "type": "rust"
+    },
+    "Grincoin_frontend": {
+      "dependencies": [
+        "Grincoin_backend"
+      ],
+      "source": [
+        "src/Grincoin_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
