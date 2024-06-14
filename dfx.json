@@ -3,7 +3,8 @@
     "Grincoin_backend": {
       "candid": "src/Grincoin_backend/Grincoin_backend.did",
       "package": "Grincoin_backend",
-      "type": "rust"
+      "type": "rust",
+      "wasm": "https://download.dfinity.systems/ic/d87954601e4b22972899e9957e800406a0a6b929/canisters/ic-icrc1-ledger.wasm.gz"
     },
     "Grincoin_frontend": {
       "dependencies": [
@@ -22,5 +23,16 @@
     }
   },
   "output_env_file": ".env",
-  "version": 1
+  "version": 1,
+
+"networks": {
+  "local": {
+    "type": "ephemeral"
+  },
+  "ic": {
+    "providers": ["https://mainnet.dfinity.network"],
+    "type": "persistent"
+  }
+}
+
 }

@@ -1,0 +1,13 @@
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Optional: set a background color */
+  }
+  
+  .landing-image {
+    width: 300px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
